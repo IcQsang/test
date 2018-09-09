@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<html lang="th"> 
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #33FFFF;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 400px; /* only for demonstration, should be removed */
+    background: #33CC99;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #0099FF;
+    height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #6600CC;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+	<meta charset="UTF-8">
+	<title>Run for ตุ๊ดตู่</title>
+</head>
+<body>
+<header>
+	<h1>Run for ตุ๊ดตู่ กันเถอะ</h1>
+</header>
+<section>
+  <nav>
+	<ul> 
+		<li><a href="http://www.sc.su.ac.th/">Silpakorn</a></li>
+		<li><a href="https://www.cp.su.ac.th/">ภาควิชาcomputer</a></li>
+		<li><a href="http://www.math.sc.su.ac.th/">ภาควิชาคณิต</a></li>
+		<li><a href="http://localhost/form/">register</a></li>
+		<li><a href="http://localhost/myweb/report_me.php">list</a></li>
+	</ul>
+	</nav>
+	<article>
+	<img src="ตุ๊ดตู่.jpg" alt="ตุ๊ดตู่" style="width:500px;height:333px;border:0;">
+	  </article>
+</section>
+	<footer>
+  <p>Footer</p>
+</footer>
+</body>
+</html>
